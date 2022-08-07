@@ -143,5 +143,4 @@ function copiarAlPortapapeles(id_elemento) {
     auxiliar.select();
     document.execCommand("copy");
     document.body.removeChild(auxiliar);
-    document.querySelector(".btn_desencriptar").removeAttribute('disabled', "true");
 }
