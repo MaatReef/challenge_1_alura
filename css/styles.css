@@ -152,7 +152,7 @@ body{
     height: 6.7rem;
     background: var(--dark-blue-300);
     border-radius: 2.4rem;
-
+    border-color: var(--dark-blue-300);
     flex: none;
     order: 0;
     align-self: stretch;
@@ -277,6 +277,7 @@ body{
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    color: #000;
 }
 
 @media (min-width: 1000px) and (max-width: 3000px) {
@@ -368,6 +369,7 @@ body{
         height: 6.7rem;
         background: var(--dark-blue-300);
         border-radius: 2.4rem;
+        border-color: var(--dark-blue-300);
         flex: none;
         order: 0;
         flex-grow: 0;
@@ -514,7 +516,7 @@ body{
         align-items: center;
         bottom: 20rem;
 
-        color: var(--dark-blue-300);
+        color: #000;
         top: 47rem;
         left: 0.8rem;
 
@@ -628,6 +630,7 @@ body{
         height: 6.7rem;
         background: var(--dark-blue-300);
         border-radius: 2.4rem;
+        border-color: var(--dark-blue-300);
         flex: none;
         order: 0;
         flex-grow: 1;
@@ -739,5 +742,6 @@ body{
         order: 1;
         align-self: stretch;
         flex-grow: 0;
+        color: #000;
     }
 }
