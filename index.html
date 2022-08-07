@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Challenge</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo_alura.svg" alt="" class="vector">
+    </header>
+    <div class="text_area" id="text_area">
+        <textarea class="input input_text" name="Ingrese texto" id="cifrar_texto" placeholder="Ingrese el texto aquí"></textarea>
+        <p class="info_interno"><img src="img/icono.svg" alt="" class="icono_exclamation"> Solo letras minúsculas y sin acentos</p>
+    </div>
+    <section class="botonera">
+        <button class="btn_encriptar">Encriptar</button>
+        <button class="btn_desencriptar">Desencriptar</button>
+    </section>
+    <section class="caja_resultado">
+        <img src="img/muñeco.svg" alt="" class="muneco">
+        <div class="caja_interna-resultado">
+            <p class="texto_resultado" id="copiar">Ningún mensaje fue encontrado</p>
+            <p class="texto_btn">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
