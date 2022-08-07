@@ -1,20 +1,18 @@
-/* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https:/fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 html {
     box-sizing: border-box; 
-    font-size: 62.5%; /* 1REM = 10rem */
+    font-size: 62.5%; 
 }
-
 :root{
     --dark-blue-100: #609ED4;
     --dark-blue-200: #356EA9;
-    /* --dark-blue-300: #0A3871;/* 1REM = 10rem */
-    --dark-blue-300: #0d7a09;/* 1REM = 10rem */
+
+    --dark-blue-300: #0d7a09;
     --dark-blue-400: #072B61;
     --dark-blue-500: #052051;
 
-    /* --light-blue-100: #F3F5FC;/* 1REM = 10rem */
-    --light-blue-100: #76d275;/* 1REM = 10rem */
+    --light-blue-100: #76d275;
     --light-blue-200: #EFF1FA;
     --light-blue-300: #E9ECF8;
     --light-blue-400: #AAB2D5;
@@ -23,10 +21,10 @@ html {
     --gray-100: #CED4D4;
     --gray-200: #ADB5BD;
     --gray-300: #868E96;
-    /* --gray-400: #495057;1REM = 10rem   */
-    --gray-400: #495057;/* 1REM = 10rem */
-    /* --gray-500: #343A40;/* 1REM = 10rem */
-    --gray-500: #343A40;/* 1REM = 10rem */
+
+    --gray-400: #495057;
+
+    --gray-500: #343A40;
 }
 
 
@@ -39,7 +37,7 @@ header{
     margin: 0 auto;
 }
 header .vector {
-    /* Vector */
+
     position: absolute;
     left: 4.27%;
     right: 87.2%;
@@ -48,20 +46,14 @@ header .vector {
 }
 
 body{
-    /* Encriptador - 1 Celular */
     background-image: url(../img/background_view.webp);
-    position: relative;
     width: auto;
     height: 9.33rem;
     z-index: -10;
-    /* Light blue/light-blue-100 */
-
-    /* background: var(--light-blue-100); */
 }
+
 .info{
-    background-color: blue;
-    /* Ingrese el texto aqui */
-    position: absolute;
+    position: relative;
     width: 3.43rem;
     height: 4.8rem;
     left: 1.6rem;
@@ -72,20 +64,17 @@ body{
     font-weight: 400;
     font-size: 3.2rem;
     line-height: 150%;
-    /* identical to box height, or 48rem */
 
-    /* Dark blue/dark-blue-300 */
     color: var(--dark-blue-300);
 }
-.input{
-    /* Ingrese el texto aqui */
-    position: absolute;
-    width: 23rem;
 
+.input{
+    position: relative;
+    max-width: 80%;
     height: 20.3rem;
-    left: 1.6rem;
+    left: 2.6rem;
     top: 15.2rem;
-    margin: 0 auto;
+    margin: 0rem -4rem 0rem -2rem;
 
     font-family: 'Inter';
     font-style: normal;
@@ -94,21 +83,12 @@ body{
     line-height: 150%;
     border: none;
     padding: 2rem;
-    /* color: red; */
-    /* identical to box height, or 4.8rem */
 
-
-    /* Dark blue/dark-blue-300 */
     background-color: #FFFFFF;
     border-radius: 3.2rem;
 }
 
-.text_area{
-    display: initial;
-
-}
 .text_area .info_interno{
-    /* Solo letras minúsculas y sin acentos */
     width: 30rem;
     height: 1.8rem;
 
@@ -117,12 +97,9 @@ body{
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 150%;
-    /* identical to box height, or 1.8rem */
 
-    /* Gray/gray-400 */
     color: #ffffff;
 
-    /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -131,20 +108,19 @@ body{
     left: 2rem;
     margin: 0.5rem 0rem 0rem;
 }
+
 .text_area .icono_exclamation{
-    /* bi:exclamation-circle-fill */
     width: 1.6rem;
     height: 1.6rem;
-
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
     flex-grow: 0;
 }
+
 .botonera{
-    /* Auto layout */
+    position: relative;
+    max-width: 86%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,18 +128,16 @@ body{
     padding: 0rem;
     gap: 2.4rem;
 
-    margin: 0rem 0rem 0rem 0rem;
-    position: absolute;
-    width: 27rem;
-    height: 15.8rem;
-    left: 1.6rem;
-    top: 48.5rem;
-    margin: 0 auto;
-}
-.botonera .btn_encriptar{
-    /* Button */
-    /* Auto layout */
+    margin: 0rem -4rem 0rem -2rem;
 
+    height: 15.8rem;
+    left: 3.6rem;
+    top: 23.5rem;
+}
+
+.botonera .btn_encriptar{
+    position: relative;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -175,25 +149,20 @@ body{
     margin: 0 0 1rem 0;
     color: white;
     font-size: 1.5rem;
-
-    width: auto;
     height: 6.7rem;
-
-    /* Dark blue/dark-blue-300 */
     background: var(--dark-blue-300);
     border-radius: 2.4rem;
 
-    /* Inside auto layout */
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
 }
 .botonera .btn_desencriptar{
-    /* Button */
-    box-sizing: border-box;
+    position: relative;
+    max-width: 100%;
 
-    /* Auto layout */
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -204,26 +173,22 @@ body{
     font-style: normal;
     margin: 1 0 0 0;
     font-size: 1.5rem;
-
-    width: auto;
     height: 6.7rem;
 
-    /* Dark blue/dark-blue-300 */
     border: 0.1rem solid var(--dark-blue-300);
     border-radius: 2.4rem;
 
-    /* Inside auto layout */
     flex: none;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
 }
+
 .caja_resultado{
-    background-color: pink;
-    /* Frame 5 */
+    position: relative;
+    width: 68%;
+    margin: 0 0 1rem 0;
 
-
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -231,80 +196,70 @@ body{
     gap: 3.2rem;
 
     position: absolute;
-    width: 19.7rem;
     height: auto;
-    left: 2.4rem;
-    top: 70.7rem;
-    margin: 0 auto 3rem;
+    left: 4.6rem;
 
-    /* White */
+    top: 70.7rem;
+    margin: 0rem 2rem 0rem -3rem;
 
     background: #FFFFFF;
     box-shadow: 0rem 2.4rem 3.2rem -0.8rem rgba(0, 0, 0, 0.08);
     border-radius: 3.2rem;
 }
 .caja_resultado .muneco{
-    /* Muñeco */
     display: none;
 }
 
-
 .caja_resultado .texto_resultado{
-    /* Ningún mensaje fue encontrado */
-    width: auto;
+    position: relative;
+    width: 100%;
     height: auto;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 120%;
-    /* or 29rem */
-
     text-align: center;
-
-    /* Gray/gray-500 */
     color: var(--gray-500);
 
-
-    /* Inside auto layout */
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+
+    overflow: auto;
 }
 
 .caja_resultado .texto_btn{
-    width: auto;
+    position: relative;
+    width: 100%;
     height: 4.8rem;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 150%;
-    /* or 24rem */
 
     text-align: center;
-
-    /* Gray/gray-400 */
     color: var(--gray-400);
+    margin: 0rem 0rem 0rem 0rem;
 
-
-    /* Inside auto layout */
     flex: none;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
 }
-.caja_resultado .btn_copiar{
-    /* Button */
+.caja_resultado .caja_interna-resultadoChange{
+    position: relative;
+    width: 100%;
 
+    margin: 0 auto;
+}
+.caja_resultado .btn_copiar{
+    position: relative;
+    max-width: 100%;
 
     box-sizing: border-box;
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -315,74 +270,48 @@ body{
 
     width: 20.5rem;
     height: 6.7rem;
-
-    /* Dark blue/dark-blue-300 */
-
+    margin: 0rem auto 2rem auto;
     border: 0.1px solid var(--dark-blue-300);
     border-radius: 2.4rem;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
 }
 
-@media (min-width: 1200px) and (max-width: 2000px) {
+@media (min-width: 1000px) and (max-width: 3000px) {
     header{
-        /* Frame 6 */
-
-
-        /* Auto layout */
-
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0rem;
         gap: 4.0rem;
 
-        position: absolute;
+        position: relative;
         width: 12rem;
         height: 4.8rem;
         left: 4rem;
         top: 4rem;
     }
     header .vector {
-        /* Vector */
-
-
         position: absolute;
-        left: 36.67%;
+        left: -392%;
         right: 37.43%;
         top: 0%;
         bottom: 0%;
-
-        /* Dark blue/dark-blue-300 */
-
-        /* background: var(--dark-blue-300); */
     }
     body{
-        /* Encriptador - 1 Desktop */
         background-image: url(../img/background_view.webp);
-
-        position: relative;
         width: auto;
         height: 102.4rem;
-
-        /* Light blue/light-blue-100 */
-
-        /* background: var(--light-blue-100); */
     }
     .input{
-        /* Ingrese el texto aqui */
-
-
-        position: absolute;
-        width: 57.7rem;
+        position: relative;
+        max-width: 80%;
         height: 28.8rem;
         left: 24rem;
         top: 16.8rem;
+        margin: 0rem -4rem 0rem -2rem;
 
         font-family: 'Inter';
         font-style: normal;
@@ -391,23 +320,12 @@ body{
         line-height: 150%;
         border: none;
         padding: 2rem;
-        /* color: red; */
-        /* identical to box height, or 4.8rem */
-    
-    
-        /* Dark blue/dark-blue-300 */
+
         background-color: #FFFFFF;
         border-radius: 3.2rem;
     }
 
-    /* .text_area{
-
-
-    } */
     .text_area .info_interno{
-        /* Solo letras minúsculas y sin acentos */
-
-
         width: 45rem;
         height: 1.8rem;
 
@@ -416,29 +334,16 @@ body{
         font-weight: 400;
         font-size: 2rem;
         line-height: 150%;
-        top: 85rem;
-        left: 24rem;
-        /* identical to box height, or 18px */
-
-        /* Gray/gray-400 */
-
+        top: 84.5rem;
+        left: 22rem;
         color: #ffffff;
-
         opacity: 0.8;
-
-        /* Inside auto layout */
-
         flex: none;
         order: 1;
         flex-grow: 0;
     }
 
     .botonera{
-        /* Frame 3 */
-
-
-        /* Auto layout */
-
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -452,11 +357,6 @@ body{
         top: 88.5rem;
     }
     .botonera .btn_encriptar{
-        /* Button */
-
-
-        /* Auto layout */
-
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -467,26 +367,14 @@ body{
 
         width: 32.8rem;
         height: 6.7rem;
-
-        /* Dark blue/dark-blue-300 */
-
         background: var(--dark-blue-300);
         border-radius: 2.4rem;
-
-        /* Inside auto layout */
-
         flex: none;
         order: 0;
         flex-grow: 0;
     }
     .botonera .btn_desencriptar{
-        /* Button */
-
-
         box-sizing: border-box;
-
-        /* Auto layout */
-
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -496,42 +384,27 @@ body{
         width: 32.8rem;
         height: 6.7rem; 
         font-size: 1.8rem;
-
-        /* Light gray */
-
         background: #D8DFE8;
-        /* Dark blue/dark-blue-300 */
-
         border: 1px solid var(--dark-blue-300);
         border-radius: 2.4rem;
-
-        /* Inside auto layout */
 
         flex: none;
         order: 1;
         flex-grow: 0;
     }
     .caja_resultado{
-        /* Rectangle 1 */
-
-
         position: absolute;
         width: 37rem;
         height: 93rem;
         left: 96.4rem;
         top: 1.3rem;
 
-        /* White */
-
         background: #FFFFFF;
-        /* shadow */
-
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 3.2rem;
     }
 
     .caja_resultado .muneco{
-        /* Muñeco */
         display: block;
         background-image: url(../img/muñeco.svg);
         position: absolute;
@@ -542,13 +415,10 @@ body{
         margin: -1px -6px -29px -41px;
     }
     .caja_resultado .muneco_oculto{
-        /* Muñeco */
+
         display: none;
     }
     .caja_resultado .caja_interna-resultado{
-         /* Frame 5 */
-        /* Auto layout */
-
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -562,8 +432,8 @@ body{
         margin: 0px -13px 0px -24px;
     }
     .caja_resultado .caja_interna-resultadoChange{
-         /* Frame 5 */
-        /* Auto layout */
+        position: relative;
+        width: 100%;
 
         display: flex;
         flex-direction: column;
@@ -578,38 +448,25 @@ body{
         top: 7.2rem;
     }
     .caja_resultado .texto_resultado{
-        /* Ningún mensaje fue encontrado */
-
-
         width: 33.6rem;
-        height: 5.8rem;
+        height: auto;
 
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 2.4rem;
         line-height: 120%;
-        /* or 29px */
-
         text-align: center;
-
-        /* Gray/gray-500 */
-
         color: var(--gray-500);
-
-
-        /* Inside auto layout */
-
         flex: none;
         order: 0;
         align-self: stretch;
         flex-grow: 0;
+
+        overflow: auto;
     }
 
     .caja_resultado .texto_btn{
-        /* Ingresa el texto que desees encriptar o desencriptar. */
-
-
         width: 33.6rem;
         height: 4.8rem;
 
@@ -618,27 +475,15 @@ body{
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 150%;
-        /* or 24px */
 
         text-align: center;
-
-        /* Gray/gray-400 */
-
         color: var(--gray-400);
-
-
-        /* Inside auto layout */
-
         flex: none;
         order: 1;
         align-self: stretch;
         flex-grow: 0;
-
     }
     .caja_resultado .texto_btnChange{
-        /* Ingresa el texto que desees encriptar o desencriptar. */
-
-
         width: 33.6rem;
         height: 4.8rem;
 
@@ -647,55 +492,36 @@ body{
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 150%;
-        /* or 24px */
-
         text-align: center;
-
-        /* Gray/gray-400 */
-
         color: var(--gray-400);
-
-
-        /* Inside auto layout */
-
         flex: none;
         order: 1;
         align-self: stretch;
         flex-grow: 0;
     }
     .caja_resultado .btn_copiar{
-        /* Button */
-
-
         width: 28.8rem;
-        height: 1.9rem;
+        display: block;
 
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 1.6rem;
         font-size: 1.8rem;
         line-height: 1.9rem;
         text-align: center;
         align-items: center;
         bottom: 20rem;
-        /* Dark blue/dark-blue-300 */
 
         color: var(--dark-blue-300);
-        position: relative;
-        top: 70.4rem;
-        left: 1.8rem;
-
-        /* Inside auto layout */
+        position: fixed;
+        top: 87.5rem;
+        left: 100.8rem;
 
         flex: none;
         order: 0;
         flex-grow: 1;
     }
     .caja_resultado .resultado{
-        /*  */
-
-
         position: absolute;
         width: 33.6rem;
         height: 80.7rem;
@@ -707,33 +533,20 @@ body{
         font-weight: 400;
         font-size: 2.4rem;
         line-height: 150%;
-        /* or 36px */
-
-
-        /* Gray/gray-400 */
-
         color: var(--gray-400);
     }
 
 }
-@media (min-width: 700px) and (max-width: 1200px) {
+
+@media (min-width: 700px) and (max-width: 1000px) {
     body{
-        /* Encriptador - 1 Tablet */
         background-image: url(../img/background_view.webp);
 
-        position: relative;
-        /* width: 76.8rem; */
-        width: 10rem;
+        width: auto;
         height: 117.4rem;
-
-        /* Light blue/light-blue-100 */
-
-        /* background: var(--light-blue-100); */
+        z-index: -10;
     }
     header {
-        /* Group 3 */
-
-
         position: absolute;
         width: 3.109rem;
         height: 5.058rem;
@@ -742,8 +555,6 @@ body{
     }
 
     header .vector{
-        /* Vector */
-
         width: 100%;
         height: 100%;
         position: absolute;
@@ -751,21 +562,13 @@ body{
         right: 90.74%;
         top: 6.25%;
         bottom: 89.8%;
-
-        /* Dark blue/dark-blue-300 */
-
-        /* background: var(--dark-blue-300); */
     }
-
-
     .input{
-        /* Ingrese el texto aqui */
-
-        position: absolute;
-        width: 63rem;
-        height: 34rem;
-        left: 0rem;
-        top: -64rem;
+        position: relative;
+        max-width: 80%;
+        height: 35rem;
+        left: 3rem;
+        top: 15rem;
 
         font-family: 'Inter';
         font-style: normal;
@@ -774,37 +577,14 @@ body{
         line-height: 150%;
         border: none;
         padding: 3rem;
-        /* color: red; */
-        /* identical to box height, or 4.8rem */
-    
-    
-        /* Dark blue/dark-blue-300 */
+        margin: 0rem 0rem 0rem 0rem;
+
         background-color: #FFFFFF;
         border-radius: 3.2rem;
     }
 
-    .text_area{
-        /* Frame 1 */
-
-
-        /* Auto layout */
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0rem;
-        gap: .8rem;
-        position: absolute;
-        width: 60rem;
-        height: 1.8rem;
-        left: 4rem;
-        top: 83.6rem;
-    }
     .text_area .info_interno{
-        /* Solo letras minúsculas y sin acentos */
-
-
-        width: 45rem;
+        width: 80%;
         height: 1.8rem;
 
         font-family: 'Inter';
@@ -812,16 +592,9 @@ body{
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 150%;
-        top: 0;
-        left: 0;
-        /* identical to box height, or 18px */
-
-
-        /* Gray/gray-400 */
-
+        top: 85rem;
+        left: 4rem;
         color: #ffffff;
-
-        /* Inside auto layout */
 
         flex: none;
         order: 1;
@@ -829,30 +602,20 @@ body{
     }
 
     .botonera{
-        /* Frame 3 */
-
-
-        /* Auto layout */
-
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         padding: 0rem;
         gap: 2.4rem;
 
-        position: absolute;
-        width: 68.8rem;
+        position: relative;
+        width: 80%;
         height: 6.7rem;
-        left: 4rem;
-        top: 87rem;
+        left: 9rem;
+        top: 48rem;
 
     }
     .botonera .btn_encriptar{
-        /* Button */
-
-
-        /* Auto layout */
-
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -863,26 +626,14 @@ body{
 
         width: 33.2rem;
         height: 6.7rem;
-
-        /* Dark blue/dark-blue-300 */
-
         background: var(--dark-blue-300);
         border-radius: 2.4rem;
-
-        /* Inside auto layout */
-
         flex: none;
         order: 0;
         flex-grow: 1;
     }
     .botonera .btn_desencriptar{
-        /* Button */
-
-
         box-sizing: border-box;
-
-        /* Auto layout */
-
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -892,54 +643,40 @@ body{
 
         width: 33.2rem;
         height: 6.7rem;
-
-        /* Dark blue/dark-blue-300 */
-
         border: 1px solid var(--dark-blue-300);
         border-radius: 2.4rem;
-
-        /* Inside auto layout */
-
         flex: none;
         order: 1;
         flex-grow: 1;
     }
     .caja_resultado{
-        /* Frame 5 */
-
-
-        /* Auto layout */
-
+        position: relative;
+        width: 85%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 32px 32px 62px 32px;
+        padding: 32px 32px 0px 32px;
         gap: 3.2rem;
 
-        position: absolute;
-        width: auto;
-        margin: 0px 0px 40px 0px;
+        margin: 0px 0px 0px 0px;
         height: auto;
-        left: 4.0rem;
-        top: 100.1rem;
-
-        /* White */
-
+        left: 3rem;
+        top: 50.1rem;
         background: #FFFFFF;
-        /* shadow */
 
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 3.2rem;
     }
-    .caja_resultado .muneco{
-        /* Muñeco */
+    .caja_resultado .muneco{    
         display: none;
     }
+    .caja_resultado .caja_interna-resultado{
+        position: relative;
+        width: 80%;
+        margin: 0px auto 40px auto;
+    }
     .caja_resultado .texto_resultado{
-        /* Ningún mensaje fue encontrado */
-
-
-        width: 61.8rem;
+        width: 100%;
         height: auto;
 
         font-family: 'Inter';
@@ -947,28 +684,21 @@ body{
         font-weight: 700;
         font-size: 2.4rem;
         line-height: 120%;
-        /* identical to box height, or 29px */
+        margin: 0px auto 40px auto;
 
         text-align: center;
-
-        /* Gray/gray-500 */
-
         color: var(--gray-500);
-
-
-        /* Inside auto layout */
-
         flex: none;
         order: 0;
         align-self: stretch;
         flex-grow: 0;
+
+        overflow: none;
     }
 
     .caja_resultado .texto_btn{
-        /* Ingresa el texto que desees encriptar o desencriptar. */
-
-
-        width: 62.4rem;
+        margin: 0px auto 40px auto;
+        width: 100%;
         height: 2.4rem;
 
         font-family: 'Inter';
@@ -976,55 +706,38 @@ body{
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 150%;
-        /* identical to box height, or 24px */
-
         text-align: center;
-
-        /* Gray/gray-400 */
-
         color: var(--gray-400);
-
-
-        /* Inside auto layout */
 
         flex: none;
         order: 1;
         align-self: stretch;
         flex-grow: 0;
     }
+    .caja_resultado .caja_interna-resultadoChange{
+        position: relative;
+        width: 100%;
+        padding: 0rem 0rem 3rem 0rem;
+        margin: 0 auto;
+    }
     .caja_resultado .btn_copiar{
-        /* Button */
-
-
         box-sizing: border-box;
-
-        /* Auto layout */
-
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         padding: 2.4rem;
         gap: .8rem;
 
-        width: 62.4rem;
+        width: 100%;
         height: 6.7rem;
         font-size: 1.6rem;
-
-        /* Dark blue/dark-blue-300 */
+        margin: 0rem 0rem 0rem 0rem;
 
         border: 1px solid var(--dark-blue-300);
         border-radius: 2.4rem;
-
-        /* Inside auto layout */
-
         flex: none;
         order: 1;
         align-self: stretch;
         flex-grow: 0;
     }
-
-}
-
-.ocultar_vista {
-    visibility: hidden;
 }
