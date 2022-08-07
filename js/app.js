@@ -92,7 +92,7 @@ function mostrar_encriptación(){
 }
 
 function desencriptar(){
-    var mensaje = null;
+    var mensaje = "";
     var mensaje = document.getElementById("cifrar_texto").value;
 
     console.log(mensaje);
