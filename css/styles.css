@@ -287,15 +287,14 @@ body{
         padding: 0rem;
         gap: 4.0rem;
 
-        position: relative;
+
         width: 12rem;
         height: 4.8rem;
-        left: 4rem;
-        top: 4rem;
+        left: 10rem;
+        top: 4rem; 
     }
     header .vector {
-        position: absolute;
-        left: -392%;
+        left: -34px;
         right: 37.43%;
         top: 0%;
         bottom: 0%;
@@ -303,13 +302,13 @@ body{
     body{
         background-image: url(../img/background_view.webp);
         width: auto;
-        height: 102.4rem;
+        height: 80rem;
     }
     .input{
         position: relative;
         max-width: 80%;
         height: 28.8rem;
-        left: 24rem;
+        left: 8rem;
         top: 16.8rem;
         margin: 0rem -4rem 0rem -2rem;
 
@@ -324,7 +323,7 @@ body{
         background-color: #FFFFFF;
         border-radius: 3.2rem;
     }
-
+    
     .text_area .info_interno{
         width: 45rem;
         height: 1.8rem;
@@ -334,8 +333,8 @@ body{
         font-weight: 400;
         font-size: 2rem;
         line-height: 150%;
-        top: 84.5rem;
-        left: 22rem;
+        top: 59.5rem;
+        left: 8rem;
         color: #ffffff;
         opacity: 0.8;
         flex: none;
@@ -353,8 +352,8 @@ body{
         position: absolute;
         width: 68rem;
         height: 6.7rem;
-        left: 24rem;
-        top: 88.5rem;
+        left: 9rem;
+        top: 63.5rem;
     }
     .botonera .btn_encriptar{
         display: flex;
@@ -392,18 +391,19 @@ body{
         order: 1;
         flex-grow: 0;
     }
+    
     .caja_resultado{
         position: absolute;
         width: 37rem;
-        height: 93rem;
-        left: 96.4rem;
-        top: 1.3rem;
+        height: 61rem;
+        left: 84.4rem;
+        top: 4.3rem;
 
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 3.2rem;
     }
-
+    
     .caja_resultado .muneco{
         display: block;
         background-image: url(../img/muñeco.svg);
@@ -411,13 +411,15 @@ body{
         width: 33.6rem;
         height: 30.4rem;
         left: 10rem;
-        top: 28.3rem;
+        top: 6.3rem;
         margin: -1px -6px -29px -41px;
     }
+    
     .caja_resultado .muneco_oculto{
 
         display: none;
     }
+    
     .caja_resultado .caja_interna-resultado{
         display: flex;
         flex-direction: column;
@@ -428,9 +430,10 @@ body{
         width: 33.6rem;
         height: 12.2rem;
         left: 7.8rem;
-        top: 61.9rem;
+        top: 39.9rem;
         margin: 0px -13px 0px -24px;
     }
+    
     .caja_resultado .caja_interna-resultadoChange{
         position: relative;
         width: 100%;
@@ -443,13 +446,13 @@ body{
         gap: 1.6rem;
         position: absolute;
         width: 33.6rem;
-        height: 80rem;
+        height: 54rem;
         left: 7.8rem;
         top: 7.2rem;
     }
     .caja_resultado .texto_resultado{
         width: 33.6rem;
-        height: auto;
+        height: 50rem;
 
         font-family: 'Inter';
         font-style: normal;
@@ -482,6 +485,7 @@ body{
         order: 1;
         align-self: stretch;
         flex-grow: 0;
+        top: -48rem;
     }
     .caja_resultado .texto_btnChange{
         width: 33.6rem;
@@ -501,8 +505,6 @@ body{
     }
     .caja_resultado .btn_copiar{
         width: 28.8rem;
-        display: block;
-
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -513,9 +515,8 @@ body{
         bottom: 20rem;
 
         color: var(--dark-blue-300);
-        position: fixed;
-        top: 87.5rem;
-        left: 100.8rem;
+        top: 47rem;
+        left: 0.8rem;
 
         flex: none;
         order: 0;
@@ -535,7 +536,6 @@ body{
         line-height: 150%;
         color: var(--gray-400);
     }
-
 }
 
 @media (min-width: 700px) and (max-width: 1000px) {
