@@ -53,8 +53,6 @@ function encriptar(){
         if( caracter == "a") {
            let cifrado = caracter.replace("a", "ai");
            frase_cifrada = frase_cifrada + cifrado;
-           console.log(cifrado);
-           console.log(frase_cifrada);
         } else if ( caracter == "e") {
             let cifrado = caracter.replace("e", "enter");
             frase_cifrada = frase_cifrada + cifrado;
@@ -95,16 +93,12 @@ function desencriptar(){
     var mensaje = "";
     var mensaje = document.getElementById("cifrar_texto").value;
 
-    console.log(mensaje);
     if ( mensaje.includes("ai")){
         let descifrado = mensaje.replaceAll(/ai/g, "a");
         frase_descubierta = frase_descubierta + descifrado;
-        console.log(frase_descubierta);
-        console.log(descifrado);
     }
     if ( mensaje.includes("enter")) {
         frase_descubierta = frase_descubierta.replaceAll(/enter/g, "e");
-        console.log(frase_descubierta);
     }
     if ( mensaje.includes("imes")) {
         frase_descubierta = frase_descubierta.replace(/imes/g, "i");
