@@ -312,7 +312,7 @@ body{
     color: var(--light-blue-100);
 }
 
-audio{
+.audio{
     height: 65rem;
 }
 @media (min-width: 1000px) and (max-width: 3000px) {
@@ -585,7 +585,7 @@ audio{
         line-height: 150%;
         color: var(--gray-400);
     }
-    audio{
+    .audio{
         height: 85rem;
         margin: 0 34rem;
     }
@@ -824,7 +824,7 @@ audio{
         flex-grow: 0;
         color: #000;
     }
-    audio{
+    .audio{
         height: 55rem;
         margin: 0 22rem;
     }
