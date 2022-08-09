@@ -311,6 +311,10 @@ body{
     padding: 0rem 24% 0rem 6rem;
     color: var(--light-blue-100);
 }
+
+audio{
+    height: 65rem;
+}
 @media (min-width: 1000px) and (max-width: 3000px) {
     header{
         display: flex;
@@ -581,6 +585,10 @@ body{
         line-height: 150%;
         color: var(--gray-400);
     }
+    audio{
+        height: 85rem;
+        margin: 0 34rem;
+    }
     .footer{
         width: 137%;
         background-color: transparent;
@@ -815,6 +823,10 @@ body{
         align-self: stretch;
         flex-grow: 0;
         color: #000;
+    }
+    audio{
+        height: 55rem;
+        margin: 0 22rem;
     }
     .footer{
         width: 100%;
